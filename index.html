@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>INANNA LAND</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+
+  background: linear-gradient(-45deg, #0a0a0a, #1a0000, #b30000, #000000);
+  background-size: 400% 400%;
+  animation: backgroundMove 12s ease infinite;
+}
+
+@keyframes backgroundMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container { max-width:500px; margin:auto; }
+
+.logo {
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-radius:50%;
+  border:6px solid #e60023;
+  padding:10px;
+  background:#ffffff;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  margin-bottom:20px;
+}
+
+h1 {
+  font-size:36px;
+  margin-bottom:5px;
+  color:#ffffff;
+}
+
+.subtitle {
+  font-size:18px;
+  color:#ddd;
+  margin-bottom:30px;
+}
+
+/* ===== الأزرار ===== */
+
+.link-button {
+  display:flex;
+  align-items:center;
+  padding:16px 20px;
+  background: linear-gradient(145deg, #ff1a3d, #cc0022);
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  border-radius:14px;
+  margin:12px auto;
+  max-width:420px;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  box-shadow:
+    0 6px 12px rgba(0,0,0,0.25),
+    inset 0 2px 4px rgba(255,255,255,0.3);
+}
+
+.link-button img {
+  width:22px;
+  height:22px;
+  margin-right:15px;
+  filter:brightness(0) invert(1);
+}
+
+.link-button span {
+  flex:1;
+  text-align:center;
+  color:#fff;
+}
+
+.link-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  border-radius: 22px;
+  box-shadow:
+    0 18px 30px rgba(0,0,0,0.35),
+    inset 0 2px 6px rgba(255,255,255,0.4);
+}
+
+.link-button:active {
+  transform: translateY(2px) scale(0.98);
+}
+
+/* ===== زر vCard العائم (أبيض + زائد أحمر) ===== */
+
+.vcard-btn {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #e60023;
+
+  font-size: 34px;
+  font-weight: bold;
+
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vcard-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+.vcard-btn:active {
+  transform: scale(0.95);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img class="logo" src="LOGO.png"/>
+
+<h1>INANNA LAND</h1>
+<div class="subtitle">Beauty Sense</div>
+
+<a class="link-button" href="https://www.instagram.com/inanna_.land/" target="_blank">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"/>
+<span>Instagram / إنستغرام</span>
+</a>
+
+<a class="link-button" href="https://www.facebook.com/profile.php?id=100064707547482" target="_blank">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"/>
+<span>Facebook / فيسبوك</span>
+</a>
+
+<a class="link-button" href="https://www.tiktok.com/@innana.land" target="_blank">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png"/>
+<span>TikTok / تيك توك</span>
+</a>
+
+<a class="link-button" href="https://www.bing.com/maps/search?v=2&pc=FACEBK&mid=8100&mkt=en-US" target="_blank">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png"/>
+<span>Location / الموقع</span>
+</a>
+
+<a class="link-button" href="mailto:Inannalandtrading@gmail.com">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png"/>
+<span>Email / البريد الإلكتروني</span>
+</a>
+
+<a class="link-button" href="tel:07901444300">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"/>
+<span>0790 144 4300</span>
+</a>
+
+<a class="link-button" href="tel:07816482210">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"/>
+<span>0781 648 2210</span>
+</a>
+
+<a class="link-button" href="tel:07710029100">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"/>
+<span>0771 002 9100</span>
+</a>
+
+<a class="link-button" href="tel:07702507007">
+<img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"/>
+<span>077 025 07007</span>
+</a>
+
+</div>
+
+<!-- زر vCard -->
+<button class="vcard-btn" onclick="downloadVCard()">+</button>
+
+<script>
+function downloadVCard() {
+  const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:INANNA LAND
+ORG:INANNA LAND
+TITLE:Beauty Sense
+TEL;TYPE=CELL:07901444300
+TEL;TYPE=CELL:07816482210
+TEL;TYPE=CELL:07710029100
+TEL;TYPE=CELL:07702507007
+EMAIL:Inannalandtrading@gmail.com
+URL:https://www.instagram.com/inanna_.land/
+URL:https://www.facebook.com/profile.php?id=100064707547482
+URL:https://www.tiktok.com/@innana.land
+END:VCARD`;
+
+  const blob = new Blob([vCardData], { type: "text/vcard" });
+  const link = document.createElement("a");
+
+  link.href = URL.createObjectURL(blob);
+  link.download = "INANNA_LAND.vcf";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
+
+</body>
+</html>
