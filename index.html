@@ -1,0 +1,292 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Damas.Ambalaj_Ziyad</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .side-logo {
+    width: 120px;
+    opacity: 0.15;
+  }
+</style>
+<style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(to bottom, #1a3f90, #3d66cc);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+    .logo {
+      width: 140px;
+      height: 140px;
+      border: 4px solid #2448a5;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      box-sizing: border-box;
+      border-radius: 50%;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p.description {
+      font-size: 14px;
+      margin-bottom: 25px;
+      line-height: 1.4;
+    }
+    .description div {
+      margin: 4px 0;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .social-icons img {
+  filter: drop-shadow(1px 1px 3px black);
+      width: 22px;
+      height: 22px;
+    }
+    .link-button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 14px 20px;
+      background-color: #1b336f;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 10px;
+      margin: 10px auto;
+      max-width: 400px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+      border: 1px solid white;
+    }
+    .link-button:hover {
+      background-color: #162955;
+    }
+    .link-button img {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .link-button span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+</style>
+<style>
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .side-logo {
+    width: 120px;
+    opacity: 0.15;
+  }
+</style>
+<style>
+  .background-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    opacity: 0.07;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+">
+  <source src="SMALL CANTA kopyası.mp4" type="video/mp4" />
+</video>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<canvas id="stars-canvas" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+"></canvas>
+<div class="container">
+<img alt="Logo" class="logo" src="https://imgur.com/F1nwEf1.png"/>
+<h1 style="font-size: 22px; font-weight: 700; margin-bottom: 5px;"><p class="description"><div style="text-shadow: 1px 1px 4px black;">Damas Ambalaj</div><div style="text-shadow: 1px 1px 4px black;">مطبعة داماس أمبلاج</div><div style="text-shadow: 1px 1px 4px black;">Damas For Printing</div></p></h1>
+
+<div class="social-icons">
+<a href="https://www.instagram.com/damas.ambalaj" target="_blank"><img alt="Instagram" src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"/></a>
+<a href="https://www.facebook.com/damasambalaj" target="_blank"><img alt="Facebook" src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"/></a>
+<a href="https://www.youtube.com/@DamasAmbalaj" target="_blank"><img alt="YouTube" src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"/></a>
+<a href="https://wa.me/902126746586" target="_blank"><img alt="WhatsApp" src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"/></a>
+<a href="https://www.tiktok.com/@damasambalaj" target="_blank"><img alt="TikTok" src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png"/></a>
+<a href="https://tr.pinterest.com/damasambalaj/" target="_blank"><img alt="Pinterest" src="https://img.icons8.com/ios-filled/50/ffffff/pinterest--v1.png"/></a>
+<a href="https://x.com/damas_ambalaj" target="_blank"><img alt="X" src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"/></a>
+<a href="https://www.damasambalaj.com.tr/" target="_blank"><img alt="Web Site" src="https://img.icons8.com/ios-filled/50/ffffff/box.png"/></a>
+<a href="https://www.google.com/maps/dir//4E+%C4%B0%C3%87+KAPI,+MALTEPE+MAH+L%C4%B0TROS+YOLU+SK.+E+NO:2,+NO:224,+34893+Zeytinburnu%2F%C4%B0stanbul" target="_blank"><img alt="Konum" src="https://img.icons8.com/ios-filled/50/ffffff/marker.png"/></a>
+
+<a href="https://www.linkedin.com/company/damasambalaj/" target="_blank">
+<img alt="LinkedIn" src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"/>
+</a>
+
+<a href="https://damasambalaj.trustpass.alibaba.com/" target="_blank">
+<img alt="Alibaba" src="https://img.icons8.com/ios-filled/50/ffffff/shopping-bag.png" style="width:22px;height:22px;"/>
+</a>
+</div>
+<a class="link-button" href="https://www.google.com/maps/dir//4E+%C4%B0%C3%87+KAPI,+MALTEPE+MAH+L%C4%B0TROS+YOLU+SK.+E+NO:2,+NO:224,+34893+Zeytinburnu%2F%C4%B0stanbul" target="_blank">
+<img alt="Konum" src="https://img.icons8.com/ios-filled/50/ffffff/marker.png"/>
+<span>Konum Bilgisi / الموقع على الخريطة</span>
+</a>
+<a class="link-button" href="https://www.damasambalaj.com.tr/"><img alt="Website" src="https://img.icons8.com/ios-filled/50/ffffff/box.png"/><span>Web Site / الموقع الإلكتروني</span></a>
+<a class="link-button" href="https://www.instagram.com/damas.ambalaj"><img alt="Instagram" src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"/><span>Instagram / انستاغرام</span></a>
+<a class="link-button" href="https://www.facebook.com/damasambalaj"><img alt="Facebook" src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"/><span>Facebook / فيسبوك</span></a>
+
+<a class="link-button" href="https://www.youtube.com/@DamasAmbalaj"><img alt="YouTube" src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"/><span>YouTube / يوتيوب</span></a>
+
+<a class="link-button" href="https://www.tiktok.com/@damasambalaj"><img alt="TikTok" src="https://img.icons8.com/ios-filled/50/ffffff/tiktok--v1.png"/><span>TikTok / تيك توك</span></a>
+<a class="link-button" href="https://tr.pinterest.com/damasambalaj/"><img alt="Pinterest" src="https://img.icons8.com/ios-filled/50/ffffff/pinterest--v1.png"/><span>Pinterest / بينتريست</span></a>
+<a class="link-button" href="https://x.com/damas_ambalaj"><img alt="X" src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"/><span>X / إكس</span></a>
+<a class="link-button" href="https://www.linkedin.com/company/damasambalaj/" target="_blank">
+<img alt="LinkedIn" src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"/>
+<span>LinkedIn / لينكد إن</span>
+</a>
+<a class="link-button" href="https://damasambalaj.trustpass.alibaba.com/" target="_blank">
+<img alt="Alibaba" src="https://img.icons8.com/ios-filled/50/ffffff/shopping-bag.png"/>
+<span>Alibaba / علي بابا</span>
+</a>
+
+<a class="link-button" href="https://wa.me/902126746586"><img alt="WhatsApp" src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"/><span>WhatsApp / واتس اب</span></a>
+<a class="link-button" href="mailto:info@damasambalaj.com.tr">
+  <img alt="Email" src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png"/>
+  <span>Email / إيميل</span>
+</a>
+</div>
+
+<script>
+const canvas = document.getElementById("stars-canvas");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+const stars = Array.from({ length: 100 }, () => ({
+  x: Math.random() * canvas.width,
+  y: Math.random() * canvas.height,
+  r: Math.random() * 1.5 + 0.5,
+  speed: Math.random() * 0.3 + 0.1
+}));
+
+function drawStars() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (const star of stars) {
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.r, 0, 2 * Math.PI);
+    ctx.fillStyle = "#FFD700";
+    ctx.fill();
+    star.y += star.speed;
+    if (star.y > canvas.height) {
+      star.y = 0;
+      star.x = Math.random() * canvas.width;
+    }
+  }
+  requestAnimationFrame(drawStars);
+}
+drawStars();
+</script>
+
+
+<a href="ZiyadKilic.vcf" download style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+">
+  +
+</a>
+
+
+<script>
+  window.addEventListener('click', function() {
+    const music = document.getElementById('bg-music');
+    if (music && music.paused) {
+      music.play().catch(() => {});
+    }
+  }, { once: true });
+</script>
+
+
+
+
+</body>
+</html>
